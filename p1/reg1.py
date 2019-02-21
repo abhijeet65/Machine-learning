@@ -35,6 +35,12 @@ plt.ylabel("Salary")
 plt.show()
  
 
+plt.scatter(X_test,y_test)
+plt.plot(X_train,regressor.predict(X_train),color='red')
+plt.title("Salary v/s years of experience(Training set)")
+plt.xlabel("Years of ecxperience")
+plt.ylabel("Salary")
+plt.show()
 
 
  
