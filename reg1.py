@@ -27,5 +27,14 @@ regressor.fit(X_train,y_train)
 
 y_pred = regressor.predict(X_test)
 
+plt.scatter(X_train,y_train)
+plt.plot(X_train,regressor.predict(X_train),color='red')
+plt.title("Salary v/s years of experience(Training set)")
+plt.xlabel("Years of ecxperience")
+plt.ylabel("Salary")
+plt.show()
+ 
 
 
+
+ 
